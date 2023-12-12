@@ -53,7 +53,7 @@ const Partner = () => {
         initialSlide: 0,
         autoplay: true,
         infinite: true,
-        dots: true,
+        dots: false,
         // appendDots: dots => {
         //     return (
         //       <div>

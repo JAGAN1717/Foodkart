@@ -51,32 +51,26 @@ const Chef = () => {
         slidesToShow: 1,
         slidesToScroll: 1,
         initialSlide: 0,
-        dots: true,
+        dots: false,
         autoplay: true,
         infinite: true,  
-        appendDots: dots => {
-            return (
-              <div>
-                <ul>
-                      <li className="d-flex">{dots}</li>
-                </ul>
-              </div>
-            )
-          },
-        customPaging: i => (
-            <button
-            className="slider_dots" 
-            style={{
-                width: "30px",
-                color: "blue",
-                border: "1px blue solid"
-              }}
-            >
-            </button>
-          )
+        // appendDots: dots => {
+        //     return (
+        //       <div>
+        //         <ul>
+        //               <li className="d-flex">{dots}</li>
+        //         </ul>
+        //       </div>
+        //     )
+        //   },
+        // customPaging: i => (
+        //     <button
+        //     className="slider_dots" 
+        //     >
+        //     </button>
+        //   )
         // nextArrow: hoverOn && <HandleNext />,
         // prevArrow: hoverOn && <HandlePrev />,
-
     }
 
 
