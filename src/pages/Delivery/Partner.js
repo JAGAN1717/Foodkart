@@ -54,6 +54,22 @@ const Partner = () => {
         autoplay: true,
         infinite: true,
         dots: true,
+        appendDots: dots => {
+            return (
+              <div>
+                <ul>
+                      <li className="d-flex">{dots}</li>
+                </ul>
+              </div>
+            )
+          },
+        customPaging: i => (
+            <button
+            className="slider_dots"
+            >
+            </button>
+          )
+
         // nextArrow: hoverOn && <HandleNext />,
         // prevArrow: hoverOn && <HandlePrev />,
         // rtl:true,
@@ -418,6 +434,7 @@ const Partner = () => {
                                         {...settings2}
                                         ref={sliderRef}
                                         arrows={true}
+
                                     >
                                         
                                         {

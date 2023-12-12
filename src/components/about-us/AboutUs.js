@@ -143,7 +143,6 @@ const AboutUs = ({ configData }) => {
         ],
     }
 
-
     const [homeTestmonials , setHometestimonils] = useState()
     
     // Testimonial

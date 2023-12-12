@@ -33,7 +33,6 @@ const Chef = () => {
     },[testimonial])
 
 
-
     // Chef Page Slider
     const { data:chefSlider} = useQuery(
         ['banner-slider'],
@@ -54,7 +53,22 @@ const Chef = () => {
         initialSlide: 0,
         dots: true,
         autoplay: true,
-        infinite: true,    
+        infinite: true,  
+        appendDots: dots => {
+            return (
+              <div>
+                <ul>
+                      <li className="d-flex">{dots}</li>
+                </ul>
+              </div>
+            )
+          },
+        customPaging: i => (
+            <button
+            className="slider_dots"
+            >
+            </button>
+          )
         // nextArrow: hoverOn && <HandleNext />,
         // prevArrow: hoverOn && <HandlePrev />,
 
