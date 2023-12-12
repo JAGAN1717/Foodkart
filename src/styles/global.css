@@ -1623,7 +1623,7 @@ h5 {
     font-size: 10px;
 }
 
-.slick-active .slider_dots {
+.slider_dots:before {
     color: #e01d57 !important;
     font-size: 10px;
     font-family: 'slick';
@@ -1642,7 +1642,7 @@ h5 {
     -moz-osx-font-smoothing: grayscale;
 } 
 
-.slider_dots {
+.slider_dots::marker {
     color: #e01d57 !important;
     font-size: 10px;
     font-family: 'slick';
@@ -1659,7 +1659,7 @@ h5 {
     color: black;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-}
+} 
 
 .scrollbar-hidden::-webkit-scrollbar {
     display: none;
