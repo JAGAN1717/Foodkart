@@ -65,7 +65,12 @@ const Chef = () => {
           },
         customPaging: i => (
             <button
-            className="slider_dots"
+            className="slider_dots" 
+            style={{
+                width: "30px",
+                color: "blue",
+                border: "1px blue solid"
+              }}
             >
             </button>
           )
