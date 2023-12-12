@@ -6,7 +6,7 @@ import { useSelector } from 'react-redux';
 import { BannerApi } from "../../hooks/react-query/config/bannerApi";
 import { useQuery } from 'react-query';
 import { onErrorResponse } from "../../components/ErrorResponse";
-
+import { CustomStackFullWidth } from "../../styled-components/CustomStyles.style";
 import { onSingleErrorResponse } from "../../components/ErrorResponse";
 import { CoustomerApi } from "../../hooks/react-query/config/customerApi";
 import { t } from "i18next";
@@ -54,21 +54,21 @@ const Partner = () => {
         autoplay: true,
         infinite: true,
         dots: true,
-        appendDots: dots => {
-            return (
-              <div>
-                <ul>
-                      <li className="d-flex">{dots}</li>
-                </ul>
-              </div>
-            )
-          },
-        customPaging: i => (
-            <button
-            className="slider_dots"
-            >
-            </button>
-          )
+        // appendDots: dots => {
+        //     return (
+        //       <div>
+        //         <ul>
+        //               <li className="d-flex">{dots}</li>
+        //         </ul>
+        //       </div>
+        //     )
+        //   },
+        // customPaging: i => (
+        //     <button
+        //     className="slider_dots"
+        //     >
+        //     </button>
+        //   )
 
         // nextArrow: hoverOn && <HandleNext />,
         // prevArrow: hoverOn && <HandlePrev />,
@@ -246,7 +246,10 @@ const Partner = () => {
 
     return (
         <>
-
+          <CustomStackFullWidth 
+           sx={{ paddingBottom: '1rem' }}
+          >
+        
             <div className="mt-4">
                 <div className="partner_slider" style={{ backgroundImage: `url(${global?.delivery_partner?.delivery_slider_background_image})`}}>
                     <Slider
@@ -559,6 +562,7 @@ const Partner = () => {
             </CustomContainer>
         </div>
 
+        </CustomStackFullWidth>
         </>
     )
 }
