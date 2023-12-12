@@ -8,7 +8,7 @@ class CustomDocument extends Document {
 
     render() {
         return (
-            <Html lang="en" style={{overflow:'hidden'}}>
+            <Html lang="en" style={{overflowX:'hidden'}}>
                 <Head>
                     {/* <link
                         rel="preconnect"
