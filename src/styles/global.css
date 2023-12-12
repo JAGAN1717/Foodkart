@@ -1623,7 +1623,26 @@ h5 {
     font-size: 10px;
 }
 
-.slider_dots:before {
+.slick-active .slider_dots {
+    color: #e01d57 !important;
+    font-size: 10px;
+    font-family: 'slick';
+    font-size: 6px;
+    line-height: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    content: '•';
+    text-align: center;
+    opacity: .25;
+    color: black;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+} 
+
+.slider_dots {
     color: #e01d57 !important;
     font-size: 10px;
     font-family: 'slick';
