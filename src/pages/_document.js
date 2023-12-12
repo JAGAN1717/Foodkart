@@ -4,11 +4,11 @@ import createEmotionServer from '@emotion/server/create-instance'
 import { createEmotionCache } from '../utils/create-emotion-cache'
 import DynamicFavicon from '../components/favicon/DynamicFavicon'
 
-class CustomDocument extends Document { 
+class CustomDocument extends Document {
 
     render() {
         return (
-            <Html lang="en">
+            <Html lang="en" style={{overflow:'hidden'}}>
                 <Head>
                     {/* <link
                         rel="preconnect"
@@ -20,9 +20,9 @@ class CustomDocument extends Document {
                         href="https://fonts.googleapis.com/css2?family=Rubik:wght@100;200;300;400;500;600;700;800;900&display=swap"
                     /> */}
 
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300;1,400&display=swap" rel="stylesheet" />
+                    <link rel="preconnect" href="https://fonts.googleapis.com" />
+                    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+                    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300;1,400&display=swap" rel="stylesheet" />
 
                     <meta name="theme-color" content="#111827" />
                     <script
@@ -37,7 +37,7 @@ class CustomDocument extends Document {
                     {/*    src="https://connect.facebook.net/en_US/sdk.js"*/}
                     {/*/>*/}
                 </Head>
-                <body style={{overflow:'scroll'}}>
+                <body style={{ overflow: 'scroll' }}>
                     <Main />
                     <NextScript />
                 </body>

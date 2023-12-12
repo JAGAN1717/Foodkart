@@ -79,7 +79,6 @@ const Partner = () => {
         //         settings: {
         //             slidesToShow: 1,
         //             slidesToScroll: 1,
-
         //             initialSlide: 0,
         //             // dots: true
         //         },
@@ -247,7 +246,7 @@ const Partner = () => {
     return (
         <>
           <CustomStackFullWidth 
-           sx={{ paddingBottom: '1rem' }}
+           spacing={2}
           >
         
             <div className="mt-4">
