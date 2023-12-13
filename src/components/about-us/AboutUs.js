@@ -53,7 +53,7 @@ const AboutUs = ({ configData }) => {
         speed: 500,
         slidesToShow: 1,
         slidesToScroll: 1,
-        dots: true,
+        dots: false,
         initialSlide: 0,
         infinite: true,
         autoplay: true,

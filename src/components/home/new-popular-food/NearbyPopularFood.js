@@ -425,7 +425,8 @@ const NearbyPopularFood = ({ data, isLoading, isFetching }) => {
             </section>
            
 
-            <section className="wrapper testimonal fadein my-sm-4 my-3 position-relative">
+            {/* <section className="wrapper testimonal fadein my-sm-4 my-3 position-relative"> */}
+            <section className="wrapper testimonal my-sm-4 my-3 position-relative">
 
                 <div className="position-absolute icon1">
                     <img

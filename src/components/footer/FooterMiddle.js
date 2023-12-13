@@ -154,7 +154,6 @@ const FooterMiddle = ({ landingPageLink }) => {
         <CustomStackFullWidth alignItems="center" pb="1.5rem" pt="3rem">
             <CustomContainer>
 
-
                 <div className='row footer_margin'>
                     <div className='col-lg-3 col-md-4'>
                         <div className='d-flex'>

@@ -149,7 +149,7 @@ const BasicInformationForm = ({ data, formSubmit, deleteUserHandler }) => {
                             name="f_name"
                             value={profileFormik.values.f_name}
                             onChange={profileFormik.handleChange}
-                            label={t('Fast Name')}
+                            label={t('First Name')}
                             required
                             error={
                                 profileFormik.touched.f_name &&
@@ -211,9 +211,9 @@ const BasicInformationForm = ({ data, formSubmit, deleteUserHandler }) => {
                             label={
                                 <span>
                                     {t('Phone')}{' '}
-                                    <span style={{ color: '#e01d57' }}>
-                                        ({t('Not changeable')})
-                                    </span>{' '}
+                                    {/* <span style={{ color: '#e01d57' }}>
+                                        ({t('Not Editable')})
+                                    </span>{' '} */}
                                 </span>
                             }
                             disabled

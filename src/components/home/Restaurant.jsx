@@ -408,7 +408,7 @@ const Restaurant = () => {
                                 <div className=''>
                                 <h6 className='fw-bold' >{t('Description')}:</h6>
                                 <p className='comlplete_3'>
-                                Best in the entire area Homemade Food Breakfast-Puri Sabji Aloo Paratha Paha Jalebi Lunch-BRoti SabjiDal Rice Salad..
+                                {t("Best in the entire area Homemade Food Breakfast-Puri Sabji Aloo Paratha Paha Jalebi Lunch-BRoti SabjiDal Rice Salad..")}
                                 </p>
                                 
                                 <p className='text_color'>{t('View Details')}</p>
@@ -420,8 +420,8 @@ const Restaurant = () => {
     </div>
 </section>
 
-
-<section className='mb-5 wrapper fadein'>
+{/* <section className='mb-5 wrapper fadein'> */}
+<section className='mb-5 wrapper '>
     <CustomContainer>
         <div className='elem to-fade-in'>
             <div className='banner_foot  d-flex justify-content-center align-items-center text-center position-relative'>

@@ -50,7 +50,7 @@ const OrderHistoryPage = () => {
         dispatch(setOrderType(value))
     }
     useEffect(() => {
-        dispatch(setOrderType(orderType ? orderType : 'order-subscription-list'))
+        dispatch(setOrderType('order-subscription-list'))
         // dispatch(setOrderType('order-subscription-list'))
         orderType && refetch()
     }, [])
@@ -60,13 +60,13 @@ const OrderHistoryPage = () => {
     return (
         <>
             <Meta
-                title={` My Order-${global?.business_name}`}
+                title={` My Subscriptions-${global?.business_name}`}
                 description=""
                 keywords=""
             />
             <CustomPaperBigCard
-                padding={isXSmall ? '16px' : '35px'}
-                sx={{ minHeight: '77vh' }}
+                padding={isXSmall ? '16px' : '0px'}
+                sx={{ minHeight: '77vh',background:'transparent',boxShadow:'none' }}
             >
                 <Grid container spacing={2.4}>
                     <Grid item xs={12} sm={12} md={12}>

@@ -48,7 +48,6 @@ const PlaceOrder = (props) => {
                                 <Link
                                     href="/privacy-policy"
                                     style={{ textDecoration: 'underline',color:'#e01d57' }}
-                                    
                                 >
                                   <span className='text_color'>{t('Refund Policy.')}</span>  
                                 </Link>

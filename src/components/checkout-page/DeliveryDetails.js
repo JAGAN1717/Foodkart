@@ -123,7 +123,6 @@ const DeliveryDetails = (props) => {
         data && setAllAddress([...data.addresses])
     }, [data])
 
-    console.log("khgfjksd", address)
 
 
     const handleClick = (values, index) => {
@@ -147,7 +146,7 @@ const DeliveryDetails = (props) => {
                     <div className=''>
                         <h4 className='fw-bold fs-20'>{t("Order Details")}</h4>
                     </div>
-                    <AddNewAddress buttonbg="true" />
+                    <AddNewAddress  refetch={refetch} buttonbg="true" />
                 </div>
 
                 <CustomStackFullWidth>

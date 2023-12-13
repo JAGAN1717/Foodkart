@@ -2,7 +2,6 @@ import React from 'react'
 import { alpha, Button, Grid, Stack, Typography } from '@mui/material'
 import LocalShippingIcon from '@mui/icons-material/LocalShipping'
 import Link from 'next/link'
-
 import {
     ButtonTypography,
     DateTypography,
@@ -114,7 +113,7 @@ const OrderCard = ({ order, index, isXs }) => {
                     <Stack flexWrap="wrap">
                         <TrackButton
                             size="small"
-                            onClick={() => handleClickTrackOrder()} 
+                            onClick={() =>handleClickTrackOrder()} 
                         >
                             <LocalShippingIcon sx={{ fontSize: '14px' }} />
                             <span className='text-truncate'>
@@ -124,7 +123,37 @@ const OrderCard = ({ order, index, isXs }) => {
                     </Stack>
                 )}
         </CustomStackFullWidth>
-    )
+    ) 
+
+
+    const OrderInformation = () => (
+        <CustomStackFullWidth
+            spacing={1}
+            alignItems={{ xs: 'flex-end', md: 'center' }}
+        >
+            {order?.order_status !== 'delivered' &&
+                order?.order_status !== 'failed' &&
+                order?.order_status !== 'canceled' &&
+                order?.order_status !== 'refund_requested' &&
+                order?.order_status !== 'refunded' && (
+                    <Stack flexWrap="wrap">
+                        <TrackButton
+                            size="small"
+                            onClick={() => handleClick()} 
+                        >
+                            <LocalShippingIcon sx={{ fontSize: '14px' }} />
+                            <span className='text-truncate'>
+                            {t('Order Details')}
+                            </span>
+                        </TrackButton>
+                    </Stack>
+                )}
+        </CustomStackFullWidth>
+    ) 
+
+    console.log("order?.order_status",order?.order_status)
+
+
     const themeColor = theme.palette.success.main
     return (
         <>
@@ -134,12 +163,16 @@ const OrderCard = ({ order, index, isXs }) => {
                     backgroundColor:
                         theme.palette.mode === 'dark'
                             ? (theme) => theme.palette.cardBackground1
-                            : (theme) => theme.palette.neutral[200],
+                            // : (theme) => theme.palette.neutral[200],
+                            : '#fff',
                     padding: '1rem',
                     width: '100%',
                     borderRadius: '5px',
                     marginBottom: '10px',
                     cursor: 'pointer',
+                    '&:hover':{
+                        backgroundColor:'#ffebf1'
+                    }
                 }}
             >
                 <Grid container alignItems="center" spacing={1}>
@@ -180,7 +213,7 @@ const OrderCard = ({ order, index, isXs }) => {
                                         : t(order?.order_status).replaceAll(
                                               '_',
                                               ' '
-                                          )}
+                                     )}
                                 </CustomColouredTypography>
                                 <Typography
                                     fontSize="12px"
@@ -217,7 +250,7 @@ const OrderCard = ({ order, index, isXs }) => {
                     <Grid item xs={8} sm={3} md={3} align="right">
                         {order?.order_status == 'delivered'
                             ? deliveredInformation()
-                            : notDeliveredInformation()}
+                            : OrderInformation()}
                     </Grid>
                 </Grid>
             </Card>

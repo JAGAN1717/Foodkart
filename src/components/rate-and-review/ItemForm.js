@@ -72,8 +72,9 @@ const ItemForm = ({ data }) => {
         })
     }
     const languageDirection = localStorage.getItem('direction')
+
     return (
-        <CustomStackFullWidth>
+        <CustomStackFullWidth >
             <form onSubmit={formik.handleSubmit}>
                 <Grid container spacing={2}>
                     <Grid item xs={12} md={12}>

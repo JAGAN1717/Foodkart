@@ -33,7 +33,7 @@ const RateAndReview = () => {
             alignItems="center"
             justifyContent="center"
             spacing={2}
-            mt="9rem"
+            mt="10rem"
             mb="2rem"
         >
             {deliveryManInfo && (
