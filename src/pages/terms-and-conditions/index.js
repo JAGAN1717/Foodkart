@@ -38,7 +38,6 @@ export default index
 //         }
 //     )
 //     const config = await configRes.json()
-//     console.log("hgjhfgjsdsd",config)
 //     return {
 //         props: {
 //             configData: config,

@@ -161,7 +161,6 @@ const AboutUs = ({ configData }) => {
     },[testimonial])
         
 
-    // console.log('title',global?.about_page?.about_top_banner_title)
     // let text = global?.about_page?.about_top_banner_title
 
     return (

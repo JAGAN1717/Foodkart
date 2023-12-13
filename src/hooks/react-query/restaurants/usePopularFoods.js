@@ -5,7 +5,6 @@ import { onSingleErrorResponse } from '../../../components/ErrorResponse'
 
 export const getData = async (pageParams) => {
     const { restaurantId, page_limit, offset, searchKey } = pageParams
-    console.log({ restaurantId })
     const { data } = await MainApi.get(
         `api/v1/products/restaurant-popular-products?restaurant_id=${restaurantId} &name=${searchKey}&limit=${page_limit}&offset=${offset}`
     )

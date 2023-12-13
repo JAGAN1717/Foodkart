@@ -17,7 +17,6 @@ const CustomBox = styled(Box)(({theme}) => ({
 const SubscriptionSchedules = props => {
     const {subscriptionSchedules, t} = props
 
-// console.log("subscriptionSchedules",subscriptionSchedules)
 
     const handleDaily = () => {
         return <CustomBox>

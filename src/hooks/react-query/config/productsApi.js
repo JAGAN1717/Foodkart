@@ -46,7 +46,6 @@ export const ProductsApi = {
         ),
     productSearch: (search_type, value, offset, page_limit) => {
         if (value !== '') {
-            console.log('ass', value)
             return MainApi.get(
                 `/api/v1/${search_type}/search?name=${value}&offset=${offset}&limit=${page_limit}`
             )

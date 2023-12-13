@@ -120,13 +120,11 @@ const lat2 = 28.7041;
 const lon2 = 77.1025;
 
 const distance = calculateDistance(lat1, lon1, lat2, lon2);
-console.log('Distance:', distance);
 
 
 
     const [featuredCategory, setFeaturedCategory] = useState([])
 
-    // console.log('featuredCategories1', featuredCategories)
 
     const getFetchCategory = async () => {
         CategoryApi.categories()

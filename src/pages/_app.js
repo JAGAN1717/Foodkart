@@ -39,7 +39,6 @@ function App({ Component, pageProps, emotionCache = clientSideEmotionCache }) {
     const script = document.createElement('script'); 
 
 
-    //  console.log('sjkhskdhsd',value) 
     // addScript(value)
     // return value
 

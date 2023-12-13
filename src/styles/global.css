@@ -35,10 +35,10 @@ html, ::-webkit-scrollbar {
     color: #fff;
 }
 
-code {
-    /* font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-        monospace; */
-}
+/* code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+        monospace;
+} */
 
 :root {
     --custom-theme-color: #e01d57;
@@ -643,8 +643,8 @@ img {
     }
 }
 
-.link-card {
-}
+/* .link-card {
+} */
 
 .link-item {
     text-align: center;
@@ -664,10 +664,10 @@ img {
     padding-bottom: 30px;
 }
 
-.download-component h6,
+/* .download-component h6,
 .download-component p {
-    /* font-family: 'Signika Negative', sans-serif !important; */
-}
+    font-family: 'Signika Negative', sans-serif !important;
+} */
 
 .download-component h6 {
     font-size: 32px;
@@ -811,10 +811,10 @@ img {
     text-transform: uppercase;
 }
 
-.footer-menu-title,
+/* .footer-menu-title,
 .footer-menu a {
-    /* font-family: 'Signika Negative', sans-serif !important; */
-}
+    font-family: 'Signika Negative', sans-serif !important;
+} */
 
 .bottom-navigation-wrap {
     border-bottom-left-radius: 0 !important;
@@ -1523,9 +1523,9 @@ h5 {
     color: #9b9b9b;
 }
 
-.restaurant-section .font-second {
-    /* font-family: 'Signika Negative', sans-serif !important; */
-}
+/* .restaurant-section .font-second {
+    font-family: 'Signika Negative', sans-serif !important;
+} */
 
 .restaurant-section .text-20 {
     font-size: 20px;
@@ -2121,9 +2121,9 @@ h5 {
     /* transition: all 1s ease; */
 }
 
-.fk_banners img:hover {
-    /* transform: scale(1.2); */
-}
+/* .fk_banners img:hover {
+    transform: scale(1.2);
+} */
 
 @media screen and (max-width: 1200px) {
     .fk_banners img {
@@ -2250,12 +2250,12 @@ ul {
     padding: 17px 0 !important;
 }
 
-.css-1i3mytx-MuiStack-root {
-    /* width: 70% !important;
-    border-top: 1px solid #fff; */
-    /* background-color: #000;
-    padding: 17px 0 !important; */
-}
+/* .css-1i3mytx-MuiStack-root {
+    width: 70% !important;
+    border-top: 1px solid #fff; 
+     background-color: #000;
+    padding: 17px 0 !important;
+} */
 
 .home_banner .position-absolute {
     /* left: -21%;
@@ -4302,12 +4302,12 @@ line-height: 1.6;
         color: #E91E63 !important;
     }
 
-    .css-1twdb9n {
-        /* width: 70% !important;
-        border-top: 1px solid #fff; */
-        /* background-color: #000;
-        padding: 17px 0 !important; */
-    }
+    /* .css-1twdb9n {
+        width: 70% !important;
+        border-top: 1px solid #fff;
+        background-color: #000;
+        padding: 17px 0 !important;
+    } */
 
     .css-87kqhg {
         font-size: 18px !important;
@@ -5767,4 +5767,8 @@ a{
   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
   border-radius: 10px;
   background-color:transparent;
+}
+
+.b_nav .MuiBadge-badge {
+    background-color: #e01d57 !important;
 }

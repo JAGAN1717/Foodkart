@@ -34,7 +34,6 @@ const HeroSectionWithSearch = ({ query, noCategories, page }) => {
         }
     ) 
 
-  console.log('tittles',global?.home_page?.home_banner_title)
     // let text = 'Say Goodbye To The Fast Food.'
     let text = global?.home_page?.home_banner_title ?? ''
     

@@ -133,7 +133,6 @@ const BestReviewedFood = ({ data, isLoading }) => {
     const FetchMenuList = (foodId) => {
         RestaurantsApi.MenuList(foodId).then(res => {
             setfoods(res.data?.data)
-            // console.log("jhfjg",res.data.data)
         }).catch(err => {
             console.error('err',err.message)
         })
@@ -148,10 +147,8 @@ const BestReviewedFood = ({ data, isLoading }) => {
     const FetchFoodList = (type) => {
         RestaurantsApi.Foodtype(type).then(res => {
             setfoods(res.data?.data)
-            // console.log("jhfjg",res.data.data)
             let dbj = res.data.data
             let key = Object.keys(dbj)
-            // console.log("khgjhgkl",foods[key[0]])
         }).catch(err => {
             console.error('err',err.message)
         })
@@ -168,7 +165,6 @@ const BestReviewedFood = ({ data, isLoading }) => {
     //         res?.data?.data?.forEach((dd)=>{
     //             dailyList.push(...dd?.description.split(/\r?\n/))
     //         })
-    //         // console.log("jhjk0",dailyList)
     //         setfoods(dailyList)
     //     }).catch(err => {
     //         console.error('err',err.message)
@@ -183,7 +179,6 @@ const BestReviewedFood = ({ data, isLoading }) => {
 
     const handleChange = (event, newValue) => {
         setValue(newValue)
-        // console.log('kgjhsgkdbsd', newValue)
     }
 
     function animateIfInView() {
@@ -232,7 +227,6 @@ const BestReviewedFood = ({ data, isLoading }) => {
 
     // const FetchSubCategory = async () => {
     //     const response = await CategoryApi.categoriesChildes(1)
-    //     // console.log('hgfjfsfsf', response.data)
     //     setSubCategory(response.data)
     // }
 

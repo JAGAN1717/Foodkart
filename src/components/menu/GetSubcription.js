@@ -63,7 +63,6 @@ export default function GetSubcription() {
 
     const { userData } = useSelector((state) => state.user)
 
-    // console.log("khgkhg",userData)
 
     useEffect(()=> {
         setAddress(addressList?.data?.addresses)
@@ -200,7 +199,6 @@ export default function GetSubcription() {
          }
 
         OrderApi.placeOrder(body).then(res => {
-            // console.log("jgfghkjl",res.data)
         }).catch(err => {
             console.error("err",err.message)
         })
@@ -208,8 +206,6 @@ export default function GetSubcription() {
 
 
     const { plans } = useSelector((state) => state.storedData)
-
-    // console.log("jgfgkhfh",plans)
 
     const initialValues = {
         "meals":'',
@@ -248,8 +244,6 @@ function formatDate(date) {
   return year + "-" + month + "-" + day;
 }
 
-console.log("Start Date: " + moment(currentDate).format('YYYY-MM-DD'));
-console.log("End Date: " +  moment(currentDate).startOf('month').format('YYYY-MM-DD'));
     
     const formik = useFormik({
         initialValues,

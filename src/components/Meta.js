@@ -30,7 +30,6 @@ const Meta = ({ title, description, keywords, ogImage, ogType, pathName }) => {
         setfb(facebook?.facebook_pixel_script)
     },[])
  
-    console.log("sdssdsdsd",fb) 
     // dangerouslySetInnerHTML={{
     //     __html: global?.privacy_policy,
     // }}

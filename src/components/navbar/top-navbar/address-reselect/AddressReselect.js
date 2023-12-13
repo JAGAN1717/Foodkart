@@ -19,7 +19,6 @@ function getLocation() {
   }
 
 const AddressReselect = ({ location }) => {
-    // console.log("jggjfg",location)
     const [openReselectModal, setOpenReselectModal] = useState(false)
     const { global, token } = useSelector((state) => state.globalSettings)
     const [openPopover, setOpenPopover] = useState(false)
@@ -62,11 +61,9 @@ const AddressReselect = ({ location }) => {
         fetch(url)
           .then((response) => response.json())
           .then((data) => {
-              // console.log('address11',data?.plus_code.compound_code.toString()?.split(',')[0])
               let currentLatLng
               currentLatLng = JSON.parse(localStorage.getItem('currentLatLng'))
               const address = data.results[0].formatted_address;
-              console.log("address", address);
                 localStorage.setItem('location',address ?? '2/15, Samiyar Madam, Kodambakkam, Chennai, Tamil Nadu 600033, India')
                 // localStorage.setItem('location','2/15, Samiyar Madam, Kodambakkam, Chennai, Tamil Nadu 600033, India')
                 localStorage.setItem('currentLatLng', JSON.stringify({"lat":latitude ?? 13.0088228,"lng":longitude ?? 80.2209665}))
@@ -102,24 +99,11 @@ const AddressReselect = ({ location }) => {
                   heading,
                   speed,
                 } = position.coords;
-                console.log(
-                  "eorwieurwer",
-                  latitude,
-                  longitude,
-                  altitude,
-                  accuracy,
-                  altitudeAccuracy,
-                  heading,
-                  speed
-                );
+
                 const url = `https://maps.googleapis.com/maps/api/geocode/json?latlng=${latitude},${longitude}&key=AIzaSyCOYU6x7yqbUnNRtBuygEfCX9NgWakZRLw`;
                 fetch(url)
                   .then((response) => response.json())
                   .then((data) => {
-                    console.log(
-                      "address1",
-                      data?.plus_code?.compound_code?.toString()?.split(" ")[1]
-                    );
                     const address = data.results[0].formatted_address;
                     // localStorage.setItem('location',address ?? '2/15, Samiyar Madam, Kodambakkam, Chennai, Tamil Nadu 600033, India')
                     localStorage.setItem('location', '2/15, Samiyar Madam, Kodambakkam, Chennai, Tamil Nadu 600033, India')

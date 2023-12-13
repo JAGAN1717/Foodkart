@@ -46,7 +46,6 @@ const FooterMiddle = ({ landingPageLink }) => {
         })
         
         setFoodCat(Categories)
-        // console.log("ghfghjdsd",Categories)
     }
 
     useEffect(()=> {

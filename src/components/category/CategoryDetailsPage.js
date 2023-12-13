@@ -136,8 +136,6 @@ const CategoryDetailsPage = ({
     CategoryApi.categories()
   )
 
-  console.log('featuredCategories',featuredCategories)
-
   useEffect(async () => {
     let fetchId = data?.data?.data.products[JSON.parse(value) - 1]?.id
     setSubFoodId(fetchId)

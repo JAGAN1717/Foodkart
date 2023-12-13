@@ -33,7 +33,7 @@ const BottomNav = (props) => {
     }
     const [value, setValue] = useState(0)
 
-    const orangeColor = '#65748B'
+    const orangeColor = '#e01d57'
 
     const MuiBottomNavigationAction = styled(BottomNavigationAction)(
         ({ theme }) => ({
@@ -43,6 +43,7 @@ const BottomNav = (props) => {
             },
         })
     )
+
     const routeToWishList = (value) => {
         if (token) {
             router.push({
@@ -57,7 +58,7 @@ const BottomNav = (props) => {
     return (
         <>
             <Paper
-                className="bottom-navigation-wrap"
+                className="bottom-navigation-wrap b_nav"
                 sx={{
                     display: { xs: 'block', md: 'none' },
                     py: 1,

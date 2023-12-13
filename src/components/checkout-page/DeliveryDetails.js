@@ -43,7 +43,8 @@ const DeliveryDetails = (props) => {
         props
     const { t } = useTranslation()
     const { cartList } = useSelector((state) => state.cart)
-    const productBaseUrl = global?.base_urls?.campaign_image_url
+    const productBaseUrl = global?.base_urls?.campaign_image_url;
+    const [subdate,setSubDate] = useState()
 
     const dispatch = useDispatch()
 
@@ -68,7 +69,6 @@ const DeliveryDetails = (props) => {
         subscriptionDispatch({ type: ACTIONS.setSubscriptionDays, payload: days })
     }, [])
      
-    console.log('addressaddressaddress',address)
 
     const handleDateRange = (value) => {
         const isSame = moment(value[0], 'yyyy/MM/DD HH:mm').isSame(moment(value[1], 'yyyy/MM/DD HH:mm'))
@@ -83,6 +83,7 @@ const DeliveryDetails = (props) => {
     }
 
     const handleStartDateChange = (newValue) => {
+        setSubDate(newValue)
         const endDate = moment(newValue).add(29, "days").toDate();
         handleDateRange([newValue, endDate])
     };
@@ -393,12 +394,12 @@ const DeliveryDetails = (props) => {
         </CustomPaperBigCard>
 
         <CustomPaperBigCard mt='1.5rem'>
-            <div className='mb-3'>
+            <div className='mb-3 textxtx'>
                 <h4 className='fw-bold fs-20'>{t("Select Date")}</h4>
             </div>
             <div className=''>
                 <label className="form-label fw-bold">{t("Start")}</label>
-                <input type="date" className="form-control mb-2" placeholder="" onChange={(e) => handleStartDateChange(e.target.value)} />
+                <input type="date"  className="form-control mb-2" placeholder="" value={subdate} onChange={(e) => handleStartDateChange(e.target.value)} />
                 <h7 className='text-secondary'>{t("Subscription For The Upcoming 30 Days")}</h7>
             </div>
         </CustomPaperBigCard>

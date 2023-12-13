@@ -228,7 +228,6 @@ export const handleProductValueWithOutDiscount = (product) => {
 }
 
 export const getProductDiscount = (items, restaurantData) => {
-    // console.log("gfjk",restaurantData?.data)
     if (restaurantData?.data?.discount) {
         let endDate = restaurantData?.data?.discount?.end_date
         let endTime = restaurantData?.data?.discount?.end_time
@@ -1289,7 +1288,6 @@ export const handleTotalAmountWithAddons = (
 }
 
 export const cartItemsTotalAmount = (cartList) => {
-    // console.log("skhgdshkdgsldsd", cartList)
     let totalAmount = 0
     if (cartList.length > 0) {
         cartList.forEach((item) => {

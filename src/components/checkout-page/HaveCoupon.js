@@ -32,7 +32,6 @@ const HaveCoupon = ({ restaurant_id, setCouponDiscount, couponDiscount,foodAmoun
         toast.success(t('Coupon Applied'))
         dispatch(setCouponType(response.data.coupon_type))
         setCouponDiscount({ ...response.data, zoneId: zoneId })
-        // console.log("gfgjk",response.data)
 
         if (typeof window !== 'undefined') {
             if (response) {

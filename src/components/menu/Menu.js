@@ -41,8 +41,6 @@ export default function Menu({setOpen}) {
         setValue2(newValue ?? event.target.value)
     }
 
-    // console.log('jhfjgfghd',featuredCategories)
-
     const [toWrite, setToWrite] = useState("");
     const [index, setIndex] = useState(0);
     let text = 'Where Every meal is cooked with'

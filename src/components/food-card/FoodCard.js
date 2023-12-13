@@ -156,8 +156,6 @@ const FoodCard = ({
         }
     }, [product,plansInfo]) 
     
-console.log("modalDatamodalData",modalData)
-  
 
     const addToCartHandler = () => {
         if (cartList.length > 0) {

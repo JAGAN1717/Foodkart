@@ -20,7 +20,6 @@ const PushNotificationLayout = ({ children, refetch, pathName }) => {
         fetchToken(setTokenFound, setFcmToken)
     }, [])
 
-    // console.log("kghkgjhgjhkg",fcmToken)
     let token = undefined
     if (typeof window !== 'undefined') {
         token = localStorage.getItem('token')

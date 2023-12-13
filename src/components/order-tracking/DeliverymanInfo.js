@@ -33,7 +33,6 @@ const DeliverymanInfo = ({ data }) => {
         lat: data?.delivery_address?.latitude ?? 0,
         lng: data?.delivery_address?.longitude ?? 0,
     }
-    console.log("jkjgk",data)
     const { data: distanceData, refetch: refetchDistance } = useQuery(
         ['get-distance', origin, destination],
         () => GoogleApi.distanceApi(origin, destination),

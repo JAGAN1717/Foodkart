@@ -146,7 +146,6 @@ const CheckoutPage = () => {
 
 
     const getFoodlist = (package_id) => {
-        // console.log('cartList',cartList)
 
     }
 
@@ -330,7 +329,6 @@ const CheckoutPage = () => {
 
     }
 
-    // console.log('jgfjfk',couponDiscount?.discount/1)
 
     const handleOrderMutationObject = (carts,address,orderType, productList, totalCart) => {
         const subscriptionOrderCount = getSubscriptionOrderCount(
@@ -455,7 +453,6 @@ const CheckoutPage = () => {
              }
         } 
         setaddressValid(condi)
-        // console.log("djhfgfjhgdfdff",condi)
     },[orderType2,address2])
 
     const handlePlaceOrder = () => {

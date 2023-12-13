@@ -21,7 +21,6 @@ const SearchBox = ({ query }) => {
     }
 
     const handleSearchedValues = (value) => {
-        // console.log('value', value)
         const searchedValues = JSON.parse(
             localStorage.getItem('searchedValues')
         )

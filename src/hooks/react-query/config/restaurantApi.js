@@ -2,7 +2,6 @@ import MainApi from '../../../api/MainApi'
 
 export const RestaurantsApi = {
     restaurants: ({ type, offset, page_limit, filterType, searchKey }) => {
-        console.log({ type })
         return MainApi.get(
             `/api/v1/restaurants/get-restaurants/all?filter_data=${filterType}&name=${searchKey}&offset=${offset}&limit=${page_limit}&veg=${
                 type === 'veg' ? 1 : 0

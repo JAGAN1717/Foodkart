@@ -103,7 +103,6 @@ const SettingPage = () => {
     const handleClick = (event) => {
         setAnchorEl(event.currentTarget)
     }
-    // console.log("global",langvalue)
     useEffect(() => {
         // Perform localStorage action
         if (typeof window !== 'undefined') {

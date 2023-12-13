@@ -10,7 +10,6 @@ import CustomContainer from '../../components/container'
 const Index = ({ configData }) => {
     const router = useRouter()
     const id = router.query.id
-    console.log({ configData })
     const { data, refetch, isLoading, isRefetching } =
         useGetBasicCampaignsDetails({ id })
     useEffect(() => {

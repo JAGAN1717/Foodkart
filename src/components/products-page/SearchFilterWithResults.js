@@ -42,7 +42,6 @@ const SearchFilterWithResults = ({
     restaurantType,
 }) => {
     const theme = useTheme()
-    // console.log('resta', foodOrRestaurant)
     return (
         <CustomStackFullWidth
             spacing={2}

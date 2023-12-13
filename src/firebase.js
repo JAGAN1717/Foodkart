@@ -50,7 +50,6 @@ export const fetchToken = async (setTokenFound, setFcmToken) => {
             if (currentToken) {
                 setTokenFound(true)
                 setFcmToken(currentToken)
-               console.log("currentToken",currentToken)
                 // Track the token -> client mapping, by sending to backend server
                 // show on the UI that permission is secured
             } else {

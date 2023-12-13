@@ -53,7 +53,6 @@ const OrderCalculation = (props) => {
         (state) => state.globalSettings
     )
 
-    console.log('orderType2orderType2orderType2', orderType)
     const { t } = useTranslation()
     const [freeDelivery, setFreeDelivery] = useState('false')
     const [lastTotal, setLastTotal] = useState(0)
@@ -135,10 +134,6 @@ const OrderCalculation = (props) => {
             extraCharge
         ) 
          
-        // let price = parseInt(lastTotal)
-
-        console.log('kjgdkfdfdf',price)
-        
         
         if (price === 0) {
             return <Typography variant="h4">{t('Free')}</Typography>
@@ -192,7 +187,6 @@ const OrderCalculation = (props) => {
         }
     }
 
-    // console.log('cartList',cartList)
 
     const dispatch = useDispatch()
     useEffect(() => {

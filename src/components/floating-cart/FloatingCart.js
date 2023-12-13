@@ -76,7 +76,6 @@ const FloatingCart = (props) => {
         (state) => state.searchFilterStore
     )
 
-    // console.log('jhgjhgk',cartList)
 
     const { t } = useTranslation()
     let languageDirection

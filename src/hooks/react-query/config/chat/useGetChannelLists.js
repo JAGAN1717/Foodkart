@@ -4,7 +4,6 @@ import {onErrorResponse} from "../../../../components/ErrorResponse";
 
 
 const getData = async (type) => {
-    console.log("type",type)
         const {data} = await MainApi.get(`/api/v1/customer/message/list?type=${type}`)
         return data
 

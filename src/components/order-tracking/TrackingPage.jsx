@@ -40,7 +40,6 @@ import { RTL } from '../RTL/RTL'
 
 const TrackingPage = ({ data }) => {
     const [actStep, setActStep] = useState(1)
-    // console.log("hgjhgh",data)
     const steps = [
         {
             label: 'Order placed',

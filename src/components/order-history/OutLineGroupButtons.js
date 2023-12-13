@@ -7,7 +7,6 @@ import { useTranslation } from 'react-i18next'
 
 const OutlinedGroupButtons = (props) => {
     const { data, selected, buttonsData, handleSelection } = props
-    console.log('buttonsData',buttonsData)
     const { t } = useTranslation()
     return (
         <Stack direction="row" alignItems="center" spacing={2}>

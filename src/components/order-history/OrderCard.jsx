@@ -151,8 +151,6 @@ const OrderCard = ({ order, index, isXs }) => {
         </CustomStackFullWidth>
     ) 
 
-    console.log("order?.order_status",order?.order_status)
-
 
     const themeColor = theme.palette.success.main
     return (

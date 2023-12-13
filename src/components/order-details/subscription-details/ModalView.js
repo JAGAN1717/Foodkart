@@ -32,7 +32,6 @@ const ModalView = props => {
         setEndDate(end);
     }
 
-    console.log('minDateminDate',minDate,maxDate)
 
     const handlePauseClick = () => {
         return <CustomStackFullWidth alignItems='center' spacing={1.5}>
