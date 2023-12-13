@@ -80,6 +80,7 @@ const Chef = () => {
         slidesToScroll: 1,
         initialSlide: 0,
         infinite: true,
+        dots: false,
         autoplay: true,
         nextArrow: hoverOn && <HandleNext />,
         prevArrow: hoverOn && <HandlePrev />,

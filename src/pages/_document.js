@@ -37,7 +37,7 @@ class CustomDocument extends Document {
                     {/*    src="https://connect.facebook.net/en_US/sdk.js"*/}
                     {/*/>*/}
                 </Head>
-                <body style={{ overflowY: 'scroll' }}>
+                <body style={{ overflowY: 'scroll',overflowX:'hidden' }}>
                     <Main />
                     <NextScript />
                 </body>
